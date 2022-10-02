@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    box-sizing: border-box;
+    color: aliceblue;
+  
+}
+body::before{
+    content: "";
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+body{
+    width: 100%;
+    height: 150vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+    padding: 0;
+}
+h1,p{
+    margin: 0.5em auto;
+    text-align: center;
+    color: black;
+
+}
+form{
+    width: 80vw;
+    min-width: 300px;
+    max-width: 920px;
+    padding: 30px;
+    margin: auto;
+    background-color: rgba(0,0,123,0.8);
+    border-radius: 30px;
+}
+label{
+    display: block;
+    margin:  0.5rem 0;;
+}
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 35px;
+  color: black;
+}
+#dropdown option {
+    margin: 40px;
+    background: rgba(32, 185, 165, 0.466);
+    color: rgb(0, 0, 0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+#pendapat, #check{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;  
+}
+input[type="file"] {
+    padding: 1px 2px;
+}
+   
+input[type="submit"] {
+    display:block;
+    margin: 1em auto;
+    height: 2em;
+    width: 60%;
+    font-size: 1.1rem;
+    background-color: aqua;
+    border-color: rgb(255, 255, 255);
+    min-width: 100px;
+    border-radius: 30px;
+  }
+  input{
+      margin: -10px 0 20px 0;
+  }
+  #dropdown{
+      margin-bottom: 20px;
+  }
+  .tiga{
+      margin-top:20px;
+  }
+  label[for="bio"]{
+      margin-top: 20px;
+
+
+  }

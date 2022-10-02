@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style_sert.css">
+</head>
+<body>
+    <h1 id="title">Lukman Company Survey Form</h1>
+    <p id="decription">silahkan isi formulir berikut:</p>
+    <form id="survey-form" action="https://survey-form.freecodecamp.rocks">
+        <div class="satu">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" required placeholder="masukan nama">
+            <label for="email" id="email-label">email: </label>
+            <input type="email" id="email" required placeholder="masukan email">
+            <label for="number" id="number-label">usia: </label>
+            <input type="number" id="number" min="18" required placeholder="masukan usia">
+            <span>Lokasi Anda</span>
+                <select name="lokasi" id="dropdown" >
+                    <option value="">tinggal dimana</option>
+                    <option value="1">Muna</option>
+                    <option value="2">Kendari</option>
+                    <option value="3">Bau-Bau</option>
+                </select>
+        </div>
+        <div class="dua">
+            <span for="pendapat">Menurut anda, Apakah Lukman Company ada perusahaan besar</span>
+            <label><input type="radio" name="pendapat" id="pendapat">Ya</label>
+            <label><input type="radio" name="pendapat" id="pendapat">Tidak</label>
+        </div>
+        <div class="tiga">
+            <span for="check">Apa keahlian anda???</span>
+            <label><input type="checkbox" id="check" required>Front-end</label>
+            <label><input type="checkbox" id="check" required>Back-end</label>
+            <label><input type="checkbox" id="check" required>Full stack</label>
+            <label><input type="checkbox" id="check" required>data science</label>
+            <label><input type="checkbox" id="check" required>Mobile</label>
+        </div>
+            <div class="empat">
+            <label for="bio">Komentar anda</label>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="tulis tentang dirimu..."></textarea>
+            <input type="submit" value="Submit" id="submit">
+    </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>hover</title>
+</head>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.container{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		
+		justify-content: center;
+		align-items: center;
+	}
+	.container .card{
+		width: 250px;
+		
+		background-size: cover;
+		background-position: center;
+		
+		border:1px solid rgb(148, 144, 144);
+		border-radius: 3px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+
+	}
+.a{
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	opacity: .5;
+	background-size: cover;
+}
+	.container .card::before{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border-top: 3px solid rgb(75, 119, 212);
+		border-left: 3px solid rgb(219, 68, 68);
+		top:-3px;
+		left: -3px;
+		border-radius: 5px;
+		opacity: 1;
+	}
+	.container .card::after{
+		content: "";
+		display: block;
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		border-right:  3px solid rgb(75, 119, 212);
+		border-bottom: 3px solid rgb(219, 68, 68);
+		right:-3px;
+		bottom: -3px;
+		border-radius: 5px;
+		opacity: 1;
+	}
+	.container .card h1{
+		color: white;
+		font-size: 22px;
+		letter-spacing: -3px;
+		font-family: cursive;
+		position: relative;
+		top: 0;
+		background-color: skyblue;
+	}
+	.container .card .l{
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		padding: 20px;
+		transform: scale(0) translateY(150px);
+		
+	}
+
+	.container .card button{
+		margin-top: 50px;
+		display: block;
+		height: 25px;
+		width: 100px;
+		background-color: blue;
+		outline: none;
+		border: none;
+		border-radius: 5px;
+		color:white;
+transform: scale(0);
+cursor: pointer;
+opacity: 1;
+
+	}
+	.card:hover::after{
+		right: -10px;
+		bottom: -10px;
+		transition: .5s;opacity: 1;
+	}
+	.card:hover::before{
+		top: -10px;
+		left: -10px;
+		transition: .5s;opacity: 1;
+	}
+	.card:hover h1 span:nth-child(even){
+		color: red;
+		transition: 1.5s;opacity: 1;
+	}
+	.card:hover h1{
+		top: 125px;
+		transition: .5s .3s;color: blue;
+	}
+	.card:hover .l{
+		transform: scale(1.5) translateY(-50px);
+		transition: .7s;
+		opacity: 1;
+	}
+	.card:hover button{
+		transform: scale(.8);
+		transition: 1.5s;
+		opacity: 1;
+	}
+	.card:hover .a{
+		transform: scale(0);
+		transition: .4s;
+	}
+</style>
+<body>
+	<div class="container">
+		<div class="card">
+			<img src="c.jpg" alt="" class="a">
+			<h1>
+				<span>L</span>
+				<span>A</span>
+				<span>O</span>
+				<span>D</span>
+				<span>E&nbsp;</span>
+				<span>L</span>
+				<span>U</span>
+				<span>K</span>
+				<span>M</span>
+				<span>A</span>
+				<span>N</span>
+				<span>A</span>
+			</h1>
+			<img class="l" src="c.jpg" alt="">
+			<button>selengkapnya</button>
+		</div>
+	</div>
+</body>
+</html>
